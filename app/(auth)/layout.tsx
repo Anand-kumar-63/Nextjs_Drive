@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import "./../globals.css"
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex">

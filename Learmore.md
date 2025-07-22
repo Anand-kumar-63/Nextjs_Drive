@@ -9,12 +9,13 @@ https://v1.tailwindcss.com/docs/utility-first
   components – for custom components (e.g., buttons, cards)
   utilities – for single-purpose utility classes (e.g., bg-blue-500, text-center)
 
-- Tailwind provides the @layer directive so you can add custom CSS to a specific layer like this:
+- Tailwind provides the @layer [directive] so you can add custom CSS to a specific layer like this:
 @layer components {
   .btn-primary {
     @apply bg-blue-500 text-white py-2 px-4 rounded;
   }
 }
+@apply [directive]
 [Explaining]
 In Tailwind CSS, you can extend the framework using custom utility classes, custom component classes, and base classes by defining them inside the respective @layer directives.
 ## Custom utility classes  
@@ -27,7 +28,7 @@ In Tailwind CSS, you can extend the framework using custom utility classes, cust
 }
 
 ## Csutom component classes 
-A custom component class, on the other hand, is a multi-purpose, reusable class that combines several [[Tailwind] [utilities]] into one class using @apply, and is declared inside @layer components. For instance, a .btn class can be created to style buttons consistently:
+A custom component class, on the other hand, is a multi-purpose, reusable class that combines several [[Tailwind] [utilities]] into one class using @apply [directive], and is declared inside @layer components. For instance, a .btn class can be created to style buttons consistently:
 @layer components {
   .btn {
     @apply px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700;
@@ -89,3 +90,12 @@ Class	What It Does
 items-center	          Horizontally centers children in flex
 w-full	                Makes child element take full container width
 w-fit or self-center	  Keeps element tight or centers it alone
+
+# How to Customize default theme
+# difference between theme and root to define custom utiltiy classes 
+https://chatgpt.com/c/687e3828-3460-8000-be0d-87eea9839b0c
+# theme and theme inline
+https://chatgpt.com/c/687e64e1-aa38-8000-a456-66eb11075c5a
+
+
+
